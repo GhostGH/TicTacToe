@@ -40,58 +40,213 @@ namespace TicTacToe
             const int buttonY = 200;
             int counter = 0;
 
+
             btn1 = new Button();
             btn1.Font = new System.Drawing.Font("", 40);
             btn1.Size = new System.Drawing.Size(buttonX, buttonY);
-           
+            btn1.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn1.BackColor = System.Drawing.Color.Azure;
+                    btn1.Text = "O";
+
+                }
+                else
+                {
+                    btn1.BackColor = System.Drawing.Color.Bisque;
+                    btn1.Text = "X";
+                   
+                }
+               
+                btn1.Enabled = false;
+
+            };
 
             btn2 = new Button();
             btn2.Font = new System.Drawing.Font("", 40);
             btn2.Location = new System.Drawing.Point(200, 0);
             btn2.Size = new System.Drawing.Size(buttonX, buttonY);
-         
+            btn2.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn2.BackColor = System.Drawing.Color.Azure;
+                    btn2.Text = "O";
+                    
+                }
+                else
+                {
+                    btn2.BackColor = System.Drawing.Color.Bisque;
+                    btn2.Text = "X";
+                   
+                }
+               
+                btn2.Enabled = false;
+            };
 
             btn3 = new Button();
             btn3.Font = new System.Drawing.Font("", 40);
             btn3.Location = new System.Drawing.Point(400, 0);
             btn3.Size = new System.Drawing.Size(buttonX, buttonY);
-            
+            btn3.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn3.BackColor = System.Drawing.Color.Azure;
+                    btn3.Text = "O";
+                   
+                }
+                else
+                {
+                    btn3.BackColor = System.Drawing.Color.Bisque;
+                    btn3.Text = "X";
+
+                }
+               
+                btn3.Enabled = false;
+            };
 
             btn4 = new Button();
             btn4.Font = new System.Drawing.Font("", 40);
             btn4.Location = new System.Drawing.Point(0, 200);
             btn4.Size = new System.Drawing.Size(buttonX, buttonY);
-           
+            btn4.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn4.BackColor = System.Drawing.Color.Azure;
+                    btn4.Text = "O";
+                   
+                }
+                else
+                {
+                    btn4.BackColor = System.Drawing.Color.Bisque;
+                    btn4.Text = "X";
+                  
+                }
+               
+                btn4.Enabled = false;
+            };
 
             btn5 = new Button();
             btn5.Font = new System.Drawing.Font("", 40);
             btn5.Location = new System.Drawing.Point(200, 200);
             btn5.Size = new System.Drawing.Size(buttonX, buttonY);
-            
+            btn5.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn5.BackColor = System.Drawing.Color.Azure;
+                    btn5.Text = "O";
+                   
+                }
+                else
+                {
+                    btn5.BackColor = System.Drawing.Color.Bisque;
+                    btn5.Text = "X";
+                   
+                }
+               
+                btn5.Enabled = false;
+            };
 
             btn6 = new Button();
             btn6.Font = new System.Drawing.Font("", 40);
             btn6.Location = new System.Drawing.Point(400, 200);
             btn6.Size = new System.Drawing.Size(buttonX, buttonY);
-           
+            btn6.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn6.BackColor = System.Drawing.Color.Azure;
+                    btn6.Text = "O";
+                   
+                }
+                else
+                {
+                    btn6.BackColor = System.Drawing.Color.Bisque;
+                    btn6.Text = "X";
+                   
+                }
+               
+                btn6.Enabled = false;
+            };
 
             btn7 = new Button();
             btn7.Font = new System.Drawing.Font("", 40);
             btn7.Location = new System.Drawing.Point(0, 400);
             btn7.Size = new System.Drawing.Size(buttonX, buttonY);
-           
+            btn7.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn7.BackColor = System.Drawing.Color.Azure;
+                    btn7.Text = "O";
+                }
+                else
+                {
+                    btn7.BackColor = System.Drawing.Color.Bisque;
+                    btn7.Text = "X";
+                    
+                }
+              
+                btn7.Enabled = false;
+            };
 
             btn8 = new Button();
             btn8.Font = new System.Drawing.Font("", 40);
             btn8.Location = new System.Drawing.Point(200, 400);
             btn8.Size = new System.Drawing.Size(buttonX, buttonY);
-           
+            btn8.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn8.BackColor = System.Drawing.Color.Azure;
+                    btn8.Text = "O";
+                  
+                }
+                else
+                {
+                    btn8.BackColor = System.Drawing.Color.Bisque;
+                    btn8.Text = "X";
+                  
+                }
+               
+                btn8.Enabled = false;
+            };
 
             btn9 = new Button();
             btn9.Font = new System.Drawing.Font("", 40);
             btn9.Location = new System.Drawing.Point(400, 400);
             btn9.Size = new System.Drawing.Size(buttonX, buttonY);
-            
+            btn9.Click += (e, sender) =>
+            {
+                counter++;
+                if (counter % 2 == 0)
+                {
+                    btn9.BackColor = System.Drawing.Color.Azure;
+                    btn9.Text = "O";
+                 
+                }
+                else
+                {
+                    btn9.BackColor = System.Drawing.Color.Bisque;
+                    btn9.Text = "X";
+                  
+                }
+               
+                btn9.Enabled = false;
+            };
+
 
 
             this.Controls.Add(btn1);

@@ -39,7 +39,7 @@ namespace TicTacToe
             const int buttonX = 200;
             const int buttonY = 200;
             int counter = 0;
-
+            int lessCode = 0;
 
             btn1 = new Button();
             btn1.Font = new System.Drawing.Font("", 40);
@@ -51,15 +51,35 @@ namespace TicTacToe
                 {
                     btn1.BackColor = System.Drawing.Color.Azure;
                     btn1.Text = "O";
-
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn1.BackColor = System.Drawing.Color.Bisque;
                     btn1.Text = "X";
-                   
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-               
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn1.Enabled = false;
 
             };
@@ -75,15 +95,35 @@ namespace TicTacToe
                 {
                     btn2.BackColor = System.Drawing.Color.Azure;
                     btn2.Text = "O";
-                    
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn2.BackColor = System.Drawing.Color.Bisque;
                     btn2.Text = "X";
-                   
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-               
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn2.Enabled = false;
             };
 
@@ -98,15 +138,36 @@ namespace TicTacToe
                 {
                     btn3.BackColor = System.Drawing.Color.Azure;
                     btn3.Text = "O";
-                   
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn3.BackColor = System.Drawing.Color.Bisque;
                     btn3.Text = "X";
 
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-               
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn3.Enabled = false;
             };
 
@@ -121,15 +182,35 @@ namespace TicTacToe
                 {
                     btn4.BackColor = System.Drawing.Color.Azure;
                     btn4.Text = "O";
-                   
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn4.BackColor = System.Drawing.Color.Bisque;
                     btn4.Text = "X";
-                  
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-               
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn4.Enabled = false;
             };
 
@@ -144,15 +225,35 @@ namespace TicTacToe
                 {
                     btn5.BackColor = System.Drawing.Color.Azure;
                     btn5.Text = "O";
-                   
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn5.BackColor = System.Drawing.Color.Bisque;
                     btn5.Text = "X";
-                   
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-               
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn5.Enabled = false;
             };
 
@@ -167,15 +268,35 @@ namespace TicTacToe
                 {
                     btn6.BackColor = System.Drawing.Color.Azure;
                     btn6.Text = "O";
-                   
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn6.BackColor = System.Drawing.Color.Bisque;
                     btn6.Text = "X";
-                   
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-               
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn6.Enabled = false;
             };
 
@@ -190,14 +311,35 @@ namespace TicTacToe
                 {
                     btn7.BackColor = System.Drawing.Color.Azure;
                     btn7.Text = "O";
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn7.BackColor = System.Drawing.Color.Bisque;
                     btn7.Text = "X";
-                    
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-              
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn7.Enabled = false;
             };
 
@@ -212,15 +354,35 @@ namespace TicTacToe
                 {
                     btn8.BackColor = System.Drawing.Color.Azure;
                     btn8.Text = "O";
-                  
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn8.BackColor = System.Drawing.Color.Bisque;
                     btn8.Text = "X";
-                  
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-               
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn8.Enabled = false;
             };
 
@@ -235,15 +397,35 @@ namespace TicTacToe
                 {
                     btn9.BackColor = System.Drawing.Color.Azure;
                     btn9.Text = "O";
-                 
+                    if ((btn1.Text == "O" && btn2.Text == "O" && btn3.Text == "O") || (btn4.Text == "O" && btn5.Text == "O" && btn6.Text == "O") || (btn7.Text == "O" && btn8.Text == "O" && btn9.Text == "O") || (btn1.Text == "O" && btn5.Text == "O" && btn9.Text == "O") || (btn3.Text == "O" && btn5.Text == "O" && btn7.Text == "O"))
+                    {
+                        this.Text = "O wins!";
+                        lessCode++;
+                    }
                 }
                 else
                 {
                     btn9.BackColor = System.Drawing.Color.Bisque;
                     btn9.Text = "X";
-                  
+                    if ((btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X") || (btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X") || (btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X") || (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X") || (btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X"))
+                    {
+                        this.Text = "X wins!";
+                        lessCode++;
+                    }
                 }
-               
+                if (lessCode == 1)
+                {
+                    btn1.Enabled = false;
+                    btn2.Enabled = false;
+                    btn3.Enabled = false;
+                    btn4.Enabled = false;
+                    btn5.Enabled = false;
+                    btn6.Enabled = false;
+                    btn7.Enabled = false;
+                    btn8.Enabled = false;
+                    btn9.Enabled = false;
+                    return;
+                }
                 btn9.Enabled = false;
             };
 
